@@ -4,6 +4,12 @@ common_error(DictIn, "No arguments given") :-
 common_error(DictIn, "No operator given") :-
     \+ get_dict(operator, DictIn, _).
 
+common_error(DictIn, "Arguments always must be list") :-
+    \+ is_list(DictIn.arguments).
+
+common_error(DictIn, "Not supported operator") :-
+    \+ member(DictIn.operator, ["add","sub","mul","div","pow","sqrt"]).
+
 common_error(_, null).
 
 /* ------------------------------------------------------------------------------- */
