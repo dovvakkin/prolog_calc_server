@@ -1,4 +1,5 @@
 This is a simple calculator server
+
 Calculator endpoint is /calc
 
 Request is a POST JSON with scheme:
