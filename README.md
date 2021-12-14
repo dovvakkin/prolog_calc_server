@@ -1,4 +1,5 @@
 This is a simple calculator server
+
 Calculator endpoint is /calc
 
 Request is a POST JSON with scheme:
@@ -9,7 +10,7 @@ Request is a POST JSON with scheme:
 }
 ```
 
-Response is a JSON with scheme:~n'),
+Response is a JSON with scheme:,
 ```
 {
     "operator": same as in request,
